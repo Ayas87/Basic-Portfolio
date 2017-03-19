@@ -3,42 +3,42 @@
 <head>
 	<title>Portfolio</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
-	<header>
+
+	<header class='border-bottom'>
 		<div class='container'>
-			<div class='header-name'>
+			<div class='header-name heading'>
 				<h1>Randy Lam</h1>
 			</div>
-		</div>
 
-		<div class='nav'>
-			<ul>
-				<li><a href="index.html">About</a></li>
-				<li><a href="portfolio.html">Portfolio</a></li>
-				<li><a href="contact.html">Contact</a></li>
-			</ul>
+			<div class='nav'>
+				<ul>
+					<li><a href="index.html">About</a></li>
+					<li id='border-sides'><a href="portfolio.html">Portfolio</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
 		</div>
 	</header>
 
-	<!--
-	content area is 960px wide // .content is the container
-	main section is 650px wide // .main is a child of content
-	sidebar section is 270px // .sidebar is a child of content
-	-->
 	<div class='content'>
+	
 		<div class='main'>
 			<form>
 				<fieldset>
-					<h2 class='main-logo'>Contact</h2>
-						<label class='labelone' for='name'>Name: </label>
-						<input name='name'/>
-						<label for='email'>Email: </label>
-						<input name='email'/>
-						<label for='message'>Message: </label>
-						<textarea name='message'></textarea>
+					<h2 class='main-logo heading border-bottom'>Contact</h2>
+						<div class='contact-form'>
+							<label class='labelone' for='name'>Name: </label>
+							<input name='name' placeholder='John Smith'/>
+							<label for='email'>Email: </label>
+							<input name='email' placeholder= 'example@gmail.com'/>
+							<label for='message'>Message: </label>
+							<textarea name='message'></textarea>
+						</div>
 				</fieldset>
 				<fieldset>
 					<input class='btn' type='submit' value='Submit'>
@@ -47,16 +47,19 @@
 		</div>
 
 		<div class='sidebar'>
-			<h3 class='connect'>Connect with Me</h3>
-			<a href="#" class='fa fa-git'></a>
-			<a href="#" class='fa fa-linkedin'></a>
-			<a href="#" class='fa fa-stack-overflow'></a>
-		</div>
-
-		<div class='footer'>
-			<p>&copy;Copyright 2017 Randy Lam</p>
+			<h3 class='connect heading'>Connect with Me</h3>
+				<div class='sidebar-icons border-top'>
+					<ul>					
+						<li><a href="#"><img src="assets/images/icon-github.png" align="middle"></a></li>
+						<li><a href="#"><img src="assets/images/icon-linkedin.png" align="middle"></a></li>
+						<li><a href="#"><img src="assets/images/icon-stack-overflow.png" align="middle"></a></li>
+					</ul>
+				</div>
 		</div>
 	</div>
 
+	<div class='footer'>
+		<p>&copy; Copyright 2017 Randy Lam</p>
+	</div>
 </body>
 </html>
